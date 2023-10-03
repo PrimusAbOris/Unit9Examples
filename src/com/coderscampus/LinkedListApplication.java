@@ -1,3 +1,5 @@
+package com.coderscampus;
+
 import java.util.LinkedList;
 import java.util.List;
 
@@ -10,15 +12,16 @@ public class LinkedListApplication {
 	// ******  ** Tail=0 <------------> Tail=1
 	// ******      (20)       ****       (40)
 	
-	numbers.add(10);
-	numbers.add(20);
-	numbers.add(30);
-	numbers.add(40);
+	for (int i = 0; i <= 5; i++) {
+		numbers.add(i * 10);
+	}
 	
 	printListToConsole(numbers);
 	
-	numbers.remove(0);
+	numbers.remove(2);  // 20
 	printListToConsole(numbers);
+	
+	// numbers.remove(20); // error, index out of bounds
 	
 	numbers.remove((Integer)30);
 	printListToConsole(numbers);
