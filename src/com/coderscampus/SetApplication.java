@@ -6,6 +6,20 @@ import java.util.Set;
 
 public class SetApplication {
 	public static void main(String[] args) {
+		Set<PersonDrei> people = new HashSet<>();
+
+		people.add(new PersonDrei(111111111, "Trevor", "Page"));
+		people.add(new PersonDrei(111111111, "Trevor", "Page"));
+		people.add(new PersonDrei(111111112, "Trevor", "Page"));
+
+		for (PersonDrei PersonDrei : people) {
+			System.out.println(PersonDrei);
+		}
+
+	  example1();
+	}
+
+	private static void example1() {
 		Set<Integer> uniqueNumbers = new LinkedHashSet<>();
 
 		System.out.println(uniqueNumbers.add(1));
