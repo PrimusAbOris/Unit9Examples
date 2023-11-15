@@ -5,6 +5,8 @@ import java.util.LinkedHashSet;
 import java.util.Set;
 
 public class SetApplication {
+	// A list for one specific data type, with no duplicates
+	// Set is an interface
 	public static void main(String[] args) {
 		Set<PersonDrei> people = new HashSet<>();
 
@@ -21,7 +23,8 @@ public class SetApplication {
 
 	private static void example1() {
 		Set<Integer> uniqueNumbers = new LinkedHashSet<>();
-
+		
+		//Since add returns a boolean, this tests if they can be added to the set
 		System.out.println(uniqueNumbers.add(1));
 		System.out.println(uniqueNumbers.add(2));
 		System.out.println(uniqueNumbers.add(3));
@@ -29,6 +32,13 @@ public class SetApplication {
 		System.out.println(uniqueNumbers.add(5));
 		System.out.println(uniqueNumbers.add(6));
 		System.out.println(uniqueNumbers.add(1));
+		
+		uniqueNumbers.add(1);
+		uniqueNumbers.add(2);
+		uniqueNumbers.add(3);
+		uniqueNumbers.add(4);
+		uniqueNumbers.add(5);
+		uniqueNumbers.add(6);
 
 		printSetToConsole(uniqueNumbers);
 
