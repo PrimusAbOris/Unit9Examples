@@ -25,6 +25,7 @@ public class SetApplication {
 		Set<Integer> uniqueNumbers = new LinkedHashSet<>();
 		
 		//Since add returns a boolean, this tests if they can be added to the set
+		//It can check the whole list because the LINKED elements are LINKED
 		System.out.println(uniqueNumbers.add(1));
 		System.out.println(uniqueNumbers.add(2));
 		System.out.println(uniqueNumbers.add(3));
@@ -42,7 +43,8 @@ public class SetApplication {
 
 		printSetToConsole(uniqueNumbers);
 
-		Set<String> uniqueNames = new HashSet<>();
+		//List<String> elements = new ArrayList<String>();
+		Set<String> uniqueNames = new HashSet<>(); //hash = the way it stores its contents
 		uniqueNames.add("Trevor Page");
 		uniqueNames.add("Guy Ross");
 		uniqueNames.add("Josh Someone");
